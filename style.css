@@ -1,0 +1,63 @@
+/* Delete all margin by deafult browser  */
+/* base css start */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    font-family: "Electrolize", serif;
+       
+}
+/* base css end */
+.navbar{
+    background-color: #000;
+    height: 60px;
+    color: white;
+    /* Nawbar scrol */
+    position: sticky;
+    top: 0;
+
+}
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding:0 50px ;
+}
+.logo{
+    color: rgb(255, 70, 70);
+    font-size: 30px;
+}
+.menu-list{
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    /* geef gap in navbar menu list */
+    column-gap: 30px;
+ 
+}
+.menu-list-item{
+    /* mause omzet naar pointer */
+    cursor: pointer;
+}
+.menu-list-item.active{
+    /* mause omzet naar pointer */
+    font-weight: bold;
+}
+.menu-list-item:hover {
+    /* item will be bold */
+    font-weight: bold;
+}
+.sidebar{
+    background-color: #000;
+    color: white;
+    height: 100%;
+    width:50px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
