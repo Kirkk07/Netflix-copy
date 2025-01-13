@@ -10,7 +10,7 @@ body {
     text-align: center;
     font-family: "Electrolize", serif;
      background: url(./img/NFL.jpg) no-repeat center center fixed; 
-     color: rgb(255, 70, 70);
+     
     font-size: 23px;
     
     background-size: cover;
@@ -29,6 +29,9 @@ body {
     
     /* background-color: antiquewhite; */
 }
+h1{
+    color: rgb(255, 70, 70);
+}
 .containerbig{
    
        
@@ -36,7 +39,7 @@ body {
     
         color: white;
         text-align: left;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Electrolize", serif;
         border-width: 15px;
         /* border: 3px solid rgb(19, 14, 8);
         border-radius: 50%; */
