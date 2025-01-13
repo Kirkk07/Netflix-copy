@@ -6,7 +6,7 @@
     margin: 0;
 }
 body{
-  height: 200vh; 
+
     font-family: "Electrolize", serif;
        
 }
@@ -24,6 +24,7 @@ body{
     /* Nawbar scrol */
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }
 .navbar-wrapper{
@@ -137,7 +138,7 @@ a {
     position: fixed;
     /* Start from top */
     top: 0;
-}§
+}
 /* All icons in the sidebar getting bigger on hoover */
 .sidebar i {
     color: white;
@@ -170,6 +171,7 @@ a {
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
+    color: black;
 }
 .featured-buttons{
     display: flex;
@@ -221,14 +223,40 @@ a {
 .movie-list{
     list-style: none;
     padding: 0;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
     
+}
+/* movie list wrapper is for overflow hidden */
+.movie-list-wrapper{
+    
+    overflow: hidden;
 }
 .movie-item{
     position: relative;
 }
+/* bij hoover maakt  title zichtbaar */
+.movie-item:hover .movie-item-title, 
+.movie-item:hover .movie-item-buttons {
+    opacity: 1;
+}
+
+/* bij hoover maakt photo nog groter */
+.movie-item:hover  .movie-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    /* als hover wordt het  photo groter en dit maakt photo donker*/
+    opacity: 0.5;
+}
 
 .movie-item-img{
     width: 270px;
+    height: 200px;
+    /* object-fit: cover;  maakt foto meer hd*/
+    object-fit: cover;
+    transition: 1s all ease-in-out;
    
 }
 .movie-item-title{
@@ -239,17 +267,38 @@ a {
     position: absolute;
     top: 10%;
     left: 50px;
+    opacity: .5;
+    
 
 }
 /* setting position for buttons and img title */
 .movie-item-buttons{
     background-color: rgba(40, 40, 40, 0.4);
-    padding: 0 10px;
-    font-size: 28px;
+    padding: 10px;
+    
     font-weight: bold;
     position: absolute;
     bottom: 10%;
     left: 50px;
+    display: flex;
+    column-gap: 20px;
+    
+
+}
+.movie-item-buttons i{
+    cursor: pointer;
+    /* maakt icons op de buttons meer opac*/
+    opacity: .5;
+    font-size: 20px;
+    transition: 0.5s all ease;
+
+
+}
+.movie-item-buttons i:hover{
+    cursor: pointer;
+    /* maakt icons op de buttons meer opac*/
+    opacity: 1;
+    font-size: 20px
 
 }
 
