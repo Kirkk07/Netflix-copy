@@ -328,3 +328,54 @@ a {
 
 /* Movie list end */
 
+/* LOGIN PAGE START */
+h1 {
+    color: rgb(255, 70, 70);
+}
+
+.containerbig {
+
+
+    /* Beyaz yazı rengi örneği */
+
+    color: white;
+    text-align: left;
+    font-family: "Electrolize", serif;
+    border-width: 15px;
+    /* border: 3px solid rgb(19, 14, 8);
+        border-radius: 50%; */
+    background: rgba(20, 2, 2, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+   
+}
+
+.movieType {
+    list-style: none;
+    padding: 0;
+}
+.underForm{
+    color: black;
+        text-align: center;
+        font-family: "Electrolize", serif;
+        background: url(./img/NFL.jpg) no-repeat center center fixed;
+    
+        font-size: 23px;
+    
+        background-size: cover;
+    
+        /* Container'ın yüksekliğini ayarlayabilirsiniz */
+        width: 100%;
+        /* Container'ın genişliğini ekran genişliği kadar alacak şekilde ayarlayabilirsiniz */
+    
+        justify-content: center;
+        align-items: center;
+    
+    
+        height: 100vh;
+        /* Ekranın yüksekliği kadar alacak şekilde ayarlandı */
+        display: flex;
+}
+
+/* LOGIN PAGE END */
